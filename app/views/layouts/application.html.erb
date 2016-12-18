@@ -2,26 +2,42 @@
 <html>
   <head>
     <title>SampleApp</title>
-    <%= csrf_meta_tags %>
 
+    <!--Link Bootstrap file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--Links to the application.css file -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!--Link Bootstrap Java file -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!--allows app to act responsivly on mobile device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <%= csrf_meta_tags %>
   </head>
 
   <body>
-	<nav>
+  	<div class="container-fluid">
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
 	  <ul>
 	    <li>Home</li>
 	    <li>About</li>
 	    <li>Contact</li>
 	  </ul>
 	</nav>
+	</div>
 
 	<%= yield %>
 
+
+	
+
 	<footer>
 	  &copy; 2015 Bike Berlin
-	</footer>
+	</footer> <br>
 
 
   </body>
