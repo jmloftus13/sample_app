@@ -32,5 +32,20 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+        <%= image_tag(product.image_url, class: "img-responsive") %>
+        <h1><%= product.name %></h1>
+        <p><%= product.description %></p>
+        <p>Color selection: <%= product.color %></p>
+        <strong>$<%= product.price %></strong>
+      </div><!-- /col -->
+    <% end %>
+  </div>
+</div>
+
+<p><p>Click here to add a <strong>
+<%= link_to 'New Product', new_product_path %></strong></p>
 
