@@ -36,11 +36,16 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-sm-2 col-md-4">
-        <%= image_tag(product.image_url, class: "img-responsive") %>
-        <h1><%= product.name %></h1>
-        <p><%= product.description %></p>
-        <p>Color selection: <%= product.color %></p>
-        <strong>$<%= product.price %></strong>
+        <div class="product-box">
+          <div class="product-image">
+              <%= image_tag(product.image_url, class: "img-responsive") %>
+          </div> <!--end product-image-->
+          <h1><%= product.name %></h1>
+          <p><%= product.description %></p>
+          <p>Color selection: <%= product.color %></p>
+          <hr>
+          <strong>$<%= product.price %></strong>
+        </div><!--end product-box-->
       </div><!-- /col -->
     <% end %>
   </div>
