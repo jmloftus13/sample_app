@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/contact'
 
- root 'static_pages#index'
+ root 'static_pages#landing_page'
   get 'static_pages/index' #this statement was in the original file
 
 
