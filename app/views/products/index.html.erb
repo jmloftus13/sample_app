@@ -35,6 +35,8 @@
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
+      <%= render @products %>
+      <% end %>
       <div class="col-sm-2 col-md-4">
         <div class="product-box">
           <div class="product-image">
