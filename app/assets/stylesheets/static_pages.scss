@@ -31,9 +31,7 @@ h2 {
 	color: black;
 	background-color: beige;
 	width: 98%;
-	margin-top: 125px; //only here to see featured product
 }
-
 ul {
 	list-style-type: none;
 	text-align: center;
@@ -62,4 +60,7 @@ hr {
 	border-width: 3px;
 	margin-left: 10px;
     margin-right: 10px;
+}
+.FeaturedProduct {
+	margin-top: 100px;
 }
