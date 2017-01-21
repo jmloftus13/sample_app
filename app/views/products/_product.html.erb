@@ -1,24 +1,19 @@
-<div class="row">
-    <div class="col-xs-12 col-md-6">
-      <%= image_tag(product.image_url, class: "img-responsive") %>
-    </div><!-- /col -->
+<div class="container-fluid">
+  <div class="row">
 
+      <div class="col-sm-2 col-md-4">
+        <div class="product-box">
+          <div class="product-image">
+              <%= image_tag(product.image_url, class: "img-responsive") %>
+          </div> <!--end product-image-->
 
-  <div class="container-fluid">
-  
-    <div class="row">
-      <div class="col-xs-12 col-md-6 text-center">
-         <h1><%= product.name %></h1>
-            <p><%= product.description %></p>
-            <p>Colour selection: <%= product.colour %></p>
-            <hr>
-            <strong>$<%= product.price %></strong>
-        </div><!--end col product-box-->
+          <h1><%= product.name %></h1>
+          <p><%= product.description %></p>
+          <p>Colour selection: <%= product.colour %></p>
+          <hr>
+          <strong>Price $<%= product.price %></strong>
+        </div><!--end product-box-->
       </div><!-- /col -->
-        <%= link_to 'Show', product %>
-        <%= link_to 'Edit', edit_product_path(product) %>
-        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <hr>
-  </div><!-- /col -->
 
-</div><!-- /row -->
+  </div><!--end row-->
+</div><!--end container-fluid-->

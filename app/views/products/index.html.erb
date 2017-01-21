@@ -1,14 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
+<div class="container">
 
-    <% @products.each do |product| %>
       <%= render @products %>
-      <% end %>
-      
-
-    
-
+  </div>    
+     
 <p><p>Click here to add a <strong>
 <%= link_to 'New Product', new_product_path %></strong></p>
-
