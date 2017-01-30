@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
   resources :products
   get 'static_pages/about'
-  <%= link_to "About Page", @about %>
-
+  
   get 'static_pages/contact'
-  <%= link_to "Contact Page", @contact %>
 
- root 'static_pages#about' #change back to landing_page later
+  root 'static_pages#landing_page'
   get 'static_pages/index' #this statement was in the original file
   
   get 'static_pages/landing_page'

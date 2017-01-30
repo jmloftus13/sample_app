@@ -12,8 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %>
+    <%= f.label :name %><br>
     <%= f.text_field :name %>
+  </div>
+
+  <!-- I added this as it was in the lesson but not sure what it does/where-->
+  <div class="field">
+    <label for="product_name">Name</label><br>
+    <input id="product_name" name="product[name]" type="text" />
   </div>
 
   <div class="field">

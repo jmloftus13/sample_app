@@ -24,9 +24,14 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
 	  <ul>
 	    <li>Home</li>
-	    <li>About</li>
-	    <li>Contact</li>
+	    <li><%= link_to "About Page", @about %></li>  
+	    <li><%= link_to "Contact Page", @contact %></li>     
 	  </ul>
+    <%= form_tag("/products", method: "get") do %>
+    <%= label_tag(:q, "Search here:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+<% end %>
 	</nav>
 	</div>
 
