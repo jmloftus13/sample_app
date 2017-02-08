@@ -32,6 +32,10 @@ gem 'jbuilder', '~> 2.5'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'
+end
+
+#add better_errors for debugging in dev env.
+group :development, :test do
   gem 'better_errors'
 end
 
