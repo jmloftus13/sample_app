@@ -29,20 +29,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Use sqlite3 as the database for Active Record
 group :development, :test do
-	gem 'sqlite3'
-end
-
-#add better_errors for debugging in dev env.
-group :development, :test do
-  gem 'better_errors'
-end
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-end
+  gem 'better_errors' #enhanced error messages
+  gem 'sqlite3'       # Use sqlite3 as the database for Active Record
+en
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
