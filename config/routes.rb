@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   root 'static_pages#landing_page'
   get 'static_pages/index' #this statement was in the original file
   
-  get 'static_pages/landing_page'
+  get 'static_pages/landing_page' #(Ben recommended I delete)
 
   post 'static_pages/thank_you'
 
