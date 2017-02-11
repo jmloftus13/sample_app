@@ -32,9 +32,11 @@
     <ul class="nav pull-right">
       <li>
         <% if user_signed_in? %>
-
+<<<<<<< HEAD
           <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-
+=======
+          <%= link_to('Logout', destroy_user_session_path, :method => delete) %>
+>>>>>>> authentication
         <% else %>
           <%= link_to('Login', new_user_session_path) %>
         <% end %>
