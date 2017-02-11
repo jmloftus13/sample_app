@@ -15,4 +15,5 @@ class OrdersController < ApplicationController #class inherits from Applications
 	def destroy
 	end
 	
+	before_filter :authenticate_user!
 end
