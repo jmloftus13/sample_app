@@ -11,7 +11,7 @@
   </p>
 
   <p>
-    <strong>Image url:</strong>
+    <strong>Image URL:</strong>
     <%= @product.image_url %>
   </p>
 
@@ -26,8 +26,10 @@
   </p>
 
 
-  <p>Average Rating: 
-    <div class="rated" data-score="<%= @product.average_rating %>"></div> 
+  <p>
+    <strong>Average Rating: </strong> 
+    <div class="rated" data-score="<%= @product.average_rating %>">
+    </div> 
   </p>
 
   <p>
@@ -41,8 +43,8 @@
     <%= @product.lowest_rating_comment.rating %>
     <%= @product.lowest_rating_comment.body %>
   </p>
-<!--%= render 'comments' %-->
-<%= render 'new_comment' %>
+  <%= render 'comments' %>
+  <%= render 'new_comment' %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
