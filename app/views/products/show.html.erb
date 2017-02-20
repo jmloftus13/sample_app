@@ -45,6 +45,10 @@
   </p>
   <%= render 'comments' %>
   <%= render 'new_comment' %>
+  
+  <div class="page-numbers col-sm-12">
+    <%= will_paginate @comments %>
+  </div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

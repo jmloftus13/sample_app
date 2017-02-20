@@ -1,17 +1,14 @@
-<div class="product-reviews">
+<div class="product-reviews container-fluid col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
 
-    <% @comments.each do |comment| %>
+  <% @comments.each do |comment| %>
 
-        <div class="row">
-            <hr>
-            <p><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
-            <p><%= "Rating: #{comment.rating}/5" %></p>
-            <p><%= comment.body %></p>
+    <div class="comment-box row">
+      <h4> <%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %> </em></small></h4>
+      <div class="rated" data-score="<%= comment.rating %>"></div>
+      <h4> <%= comment.body %> </h4>
 
-            	<div class="rated" data-score="<%= comment.rating %>"></div>
-            	
-        </div>
-    <% end %>
-
-</div>
+    </div> <!-- end row -->
+  <% end %>
+  
+</div> <!-- end product-comments -->
 
