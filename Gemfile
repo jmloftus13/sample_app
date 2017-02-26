@@ -33,6 +33,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'better_errors' #enhanced error messages
   gem 'sqlite3'       #Use sqlite3 as the database for Active Record
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
