@@ -22,8 +22,15 @@ describe Product do
 	end #end context block
 
 	#validations test
-	it "is not valid" do
-	   expect(Product.new(description: "Nice bike")).not_to be_valid
-	  end #end validation test
+	context "when product has no name" do
+		before do
+			@product = Product.create(description: "Nice bike")
+		end #end before
+		it "is an invalid product" do 
+			expect(@product).not_to be_valid
+		end #end it block
+
+			
+	  end #end context validation test
 
 end #end Product describe block
