@@ -1,48 +1,56 @@
 <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Name:</strong>
-    <%= @product.name %>
-  </p>
+  <div class="col-md-4">
+      <p>
+        <strong>Name:</strong>
+        <%= @product.name %>
+      </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @product.description %>
-  </p>
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
 
-  <p>
-    <strong>Image URL:</strong>
-    <%= @product.image_url %>
-  </p>
+      <p>
+        <strong>Image URL:</strong>
+        <%= @product.image_url %>
+      </p>
 
-  <p>
-    <strong>Colour:</strong>
-    <%= @product.colour %>
-  </p>
+      <p>
+        <strong>Colour:</strong>
+        <%= @product.colour %>
+      </p>
 
-  <p>
-    <strong>Price:</strong>
-    <%= @product.price %>
-  </p>
+      <p>
+        <strong>Price:</strong>
+        <%= @product.price %>
+      </p>
 
 
-  <p>
-    <strong>Average Rating: </strong> 
-    <div class="rated" data-score="<%= @product.average_rating %>">
-    </div> 
-  </p>
+      <p>
+        <strong>Average Rating: </strong> 
+        <div class="rated" data-score="<%= @product.average_rating %>">
+        </div> 
+      </p>
 
-  <p>
-    <strong>Highest rating:</strong>
-    <%= @product.highest_rating_comment.rating %>
-    <%= @product.highest_rating_comment.body %>
-  </p>
+      <p>
+        <strong>Highest rating:</strong>
+        <%= @product.highest_rating_comment.rating %>
+        <%= @product.highest_rating_comment.body %>
+      </p>
 
-  <p>
-    <strong>Lowest rating:</strong>
-    <%= @product.lowest_rating_comment.rating %>
-    <%= @product.lowest_rating_comment.body %>
-  </p>
+      <p>
+        <strong>Lowest rating:</strong>
+        <%= @product.lowest_rating_comment.rating %>
+        <%= @product.lowest_rating_comment.body %>
+      </p>
+
+      <!--Stripe Pay with Card button-->
+      <%= form_tag "/payments/create" do %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+
+  </div><!--end class column-->
   <%= render 'comments' %>
   <%= render 'new_comment' %>
   
