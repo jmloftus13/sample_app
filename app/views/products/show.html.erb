@@ -48,6 +48,8 @@
       <!--Stripe Pay with Card button-->
       <%= form_tag "/payments/create" do %>
         <%= render partial: "shared/stripe_checkout_button" %>
+        <!--setting the hidden field allows me to access this in payments_controller.rb -->
+        <%= hidden_field_tag(:product_id, @product.id) %>
       <% end %>
 
   </div><!--end class column-->
