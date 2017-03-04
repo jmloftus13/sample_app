@@ -2,27 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-th {
-	font: bold;
-	color: blue;
-	padding: 50px;
-}
-table {
-	margin: 25px;
-}
-thead {
-	border: solid black;
-	border-radius: 25px 25px;
-	box-shadow: 3px gray;
-	width: 99%;
-}
 .page-numbers {
   text-align: center;
-  color: Maroon;
+  color: Green;
 }
 //styling around the product box - much more to be done here!
-.col-md-4 {
-	border: solid maroon;
-	border-radius: 15px 15px;
+.col-xs-12, .col-md-6 {
+	//border: solid maroon; ** boxes don't look good around teh product as is
+	//border-radius: 15px 15px;
 	box-shadow: 3px gray;
+}
+.product_title {
+    font-size: 4em;
+    left: 25%;
+    width: 30pc;
+    height: 5pc;
+    padding: 7px 0;
+    position: relative;
 }

@@ -1,58 +1,49 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+  
+  <div class="col-xs-12 col-md-6">
+    <%=image_tag(@product.image_url, class: "img-responsive detail img-zoom", data_zoom_image: "@product.image_url_large", id: "product_image") %>
+    </div> <!--end img-responsive class-->
 
-  <div class="col-md-4">
-      <p>
-        <strong>Name:</strong>
-        <%= @product.name %>
-      </p>
+     <div class="col-xs-12 col-md-6">
+    <h2 class="product-title">
+      <%= @product.name %>
+    </h2>
+    <p>
+      <strong>Description:</strong>
+      <%= @product.description %>
+      <br>
+      <br>
+      <strong>Price:</strong>
+      <span class="glyphicons glyphicons-usd"></span><%= @product.price %>
+      <br>
+      <br>
+      <strong>Colour:</strong>
+      <%= @product.colour %>
+      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+    </p>  
 
-      <p>
-        <strong>Description:</strong>
-        <%= @product.description %>
-      </p>
-
-      <p>
-        <strong>Image URL:</strong>
-        <%= @product.image_url %>
-      </p>
-
-      <p>
-        <strong>Colour:</strong>
-        <%= @product.colour %>
-      </p>
-
-      <p>
-        <strong>Price:</strong>
-        <%= @product.price %>
-      </p>
-
-
-      <p>
-        <strong>Average Rating: </strong> 
-        <div class="rated" data-score="<%= @product.average_rating %>">
-        </div> 
-      </p>
-
-      <p>
-        <strong>Highest rating:</strong>
+    <p>
+      <strong>Highest rating:</strong>
         <%= @product.highest_rating_comment.rating %>
         <%= @product.highest_rating_comment.body %>
-      </p>
-
-      <p>
-        <strong>Lowest rating:</strong>
+      <br>
+      <strong>Lowest rating:</strong>
         <%= @product.lowest_rating_comment.rating %>
         <%= @product.lowest_rating_comment.body %>
-      </p>
+    </p>
 
-      <!--Stripe Pay with Card button-->
-      <%= form_tag "/payments/create" do %>
-        <%= render partial: "shared/stripe_checkout_button" %>
-        <!--setting the hidden field allows me to access this in payments_controller.rb -->
-        <%= hidden_field_tag(:product_id, @product.id) %>
-      <% end %>
+  <!--Stripe Pay with Card button-->
+  <%= form_tag "/payments/create" do %>
+  <%= render partial: "shared/stripe_checkout_button" %>
+  <!--hidden field allows me to access this in payments_controller.rb -->
+  <%= hidden_field_tag(:product_id, @product.id) %>
+  <% end %>
 
-  </div><!--end class column-->
+
+    </div><!--end class column-->
+  </div><!--end class row-->
+  
   <%= render 'comments' %>
   <%= render 'new_comment' %>
   

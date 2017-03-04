@@ -2,9 +2,14 @@
   <div class="row">
 
       <div class="col-sm-2 col-md-4">
+        <!-- links to show, edit, destry-->
+        <a><%= link_to 'Show', product %></a> |
+        <a><%= link_to 'Edit', edit_product_path(product) %></a> |
+        <a><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+
         <div class="product-box">
           <div class="product-image">
-              <%= image_tag(product.image_url, class: "img-responsive") %>
+              <%= image_tag(product.image_url, class: "img-responsive img-zoom", id: "product_image", data_zoom_image: product.image_url) %>
           </div> <!--end product-image-->
 
           <h1><%= product.name %></h1>
