@@ -12,22 +12,25 @@
     <p>
       <strong>Description:</strong>
       <%= @product.description %>
-      <br>
-      <br>
+    </p>
+    <p>
       <strong>Price:</strong>
       <span class="glyphicons glyphicons-usd"></span><%= @product.price %>
-      <br>
-      <br>
+    </p>
+    <p>
       <strong>Colour:</strong>
-      <%= @product.colour %>
-      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+        <%= @product.colour %>
+    <p>
+      Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
     </p>  
 
     <p>
       <strong>Highest rating:</strong>
         <%= @product.highest_rating_comment.rating %>
         <%= @product.highest_rating_comment.body %>
-      <br>
+    </p>
+    
+    <p>
       <strong>Lowest rating:</strong>
         <%= @product.lowest_rating_comment.rating %>
         <%= @product.lowest_rating_comment.body %>
