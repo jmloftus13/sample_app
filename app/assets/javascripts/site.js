@@ -10,7 +10,7 @@ var refreshRating = function() {
 };
 
 /*call to refreshRating function must be done afer making AJAX request */
-$(document).on('turbolinks:load', function(){
+$(document).on('turbolinks:load ajaxSuccess', function(){
   refreshRating();
 
     /*elevateZoom */
