@@ -57,4 +57,5 @@ gem 'cancancan', '~> 1.10' #ex5.5 use for authorization
 gem 'will_paginate', '~> 3.1.0' #ex5.9 allows pagination to limit comments
 gem 'rails-controller-testing'
 gem 'stripe'
+gem 'dalli'
 gem 'brakeman', :require => false

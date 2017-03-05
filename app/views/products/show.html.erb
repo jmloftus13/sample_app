@@ -7,20 +7,26 @@
 
      <div class="col-xs-12 col-md-6">
     <h2 class="product-title">
+
+    <!--add caching around product section ex6.11-->
+    <!--remove later if not needed-->
+  <% cache @product do %>
       <%= @product.name %>
-    </h2>
-    <p>
-      <strong>Description:</strong>
-      <%= @product.description %>
-    </p>
-    <p>
-      <strong>Price:</strong>
-      <span class="glyphicons glyphicons-usd"></span><%= @product.price %>
-    </p>
-    <p>
-      <strong>Colour:</strong>
-        <%= @product.colour %>
-    <p>
+      </h2>
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
+      <p>
+        <strong>Price:</strong>
+        <span class="glyphicons glyphicons-usd"></span><%= @product.price %>
+      </p>
+      <p>
+        <strong>Colour:</strong>
+          <%= @product.colour %>
+      <p>
+  <% end -%> <!--end caching-->
+
       Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
     </p>  
 

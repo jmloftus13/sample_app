@@ -4,7 +4,11 @@
 
   <!--should this be a class row??? -->
   <div class = "container">
-    <%= render @products %>
+  	<!--cache key ties this back to app/helper/products_helper.rb-->
+  	<!--greatly improved load time-->
+  	<% cache(cache_key_for_products) do %>
+    	<%= render @products %>
+    <% end %>
   </div>
  
      
