@@ -59,3 +59,5 @@ gem 'rails-controller-testing'
 gem 'stripe'
 gem 'dalli'
 gem 'brakeman', :require => false
+gem 'redis-rails'
+

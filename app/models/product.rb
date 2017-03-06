@@ -16,4 +16,18 @@ class Product < ApplicationRecord
 	  comments.average(:rating).to_f
 	end
 
+	def count_ratings
+    	comments.count(:rating).to_int
+  	end
+
+  	def views
+  		#same as 'GET product:1'
+    	$redis.get("product:#{id}") 
+  	end
+
+  	def viewed!
+  		#same as 'INC product:1'
+    	$redis.incr("product:#{id}")
+  	end
+
 end

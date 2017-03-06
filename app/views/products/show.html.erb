@@ -30,6 +30,17 @@
       Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
     </p>  
 
+<!--using redis for counter-->
+    <h6>          
+      Views:
+        <span class="badge">
+          <%= @product.views %>
+        </span>
+    </h6> 
+        </p>
+        <% end %>
+
+
     <p>
       <strong>Highest rating:</strong>
         <%= @product.highest_rating_comment.rating %>
