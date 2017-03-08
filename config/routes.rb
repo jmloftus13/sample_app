@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   #change sign_in & out to login & logout
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "new_registrations" }
 
   resources :products do
     resources :comments
