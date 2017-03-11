@@ -22,12 +22,13 @@ class Product < ApplicationRecord
 
   	def views
   		#same as 'GET product:1'
-    	$redis.get("product:#{id}") 
+  		#successfully implemented Redis in 6.12 but it caused complications on Heroku in 6.13
+    	#$redis.get("product:#{id}") 
   	end
 
   	def viewed!
   		#same as 'INC product:1'
-    	$redis.incr("product:#{id}")
+    	#$redis.incr("product:#{id}")
   	end
 
 end
