@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-<div class="row">
+
+<div class="row" data-product-id="<%= @product.id %>">
   
   <div class="col-xs-12 col-md-6">
     <%=image_tag(@product.image_url, class: "img-responsive detail img-zoom", data_zoom_image: "@product.image_url_large", id: "product_image") %>

@@ -18,5 +18,23 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
     //code in the lesson does not have the word 'data' in the above function. problem?
     //this shows the alert coded in show.html.erb
     $(".alert.alert-info").show();
+    $('.product-reviews').prepend(data.comment);
+    $("#average-rating").attr('data-score', data.average_rating);
+    refreshRating();
+    //console.log(data);
+  },
+
+  listen_to_comments: function() {
+    return this.perform('listen', {
+        product_id: $("[data-product-id]").data("product-id")
+    });
   }
+
 });
+
+// ensures listen-to_comments is called every time user loads a new page
+$(document).on('turbolinks:load', function() {
+  App.product.listen_to_comments();
+
+});
+
