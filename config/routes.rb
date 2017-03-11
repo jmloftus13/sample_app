@@ -21,5 +21,10 @@ Rails.application.routes.draw do
   post 'payments/create'
 
   resources :orders, only: [:index, :show, :create, :detroy]
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # For details on the DSL available within this file, 
+  #see http://guides.rubyonrails.org/routing.html
+
+  #runs ActionCable within same process as the entire app under route /cable.
+  mount ActionCable.server => '/cable'
+
 end
