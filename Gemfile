@@ -59,5 +59,5 @@ gem 'rails-controller-testing'
 gem 'stripe'
 gem 'dalli'
 gem 'brakeman', :require => false
-gem 'redis-rails'
+#gem 'redis-rails' commenting out as Redis has caused conflicts in 6.13 & 6.14
 
