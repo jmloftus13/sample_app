@@ -51,7 +51,8 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
-  config.cache_store = :dalli_store, nil,
+  #commenting 'dalli' out to see if this is the issue with ActionCable
+  #config.cache_store = :dalli_store, nil,
 
   (ENV["MEMCACHIER_SERVERS"] || "").split(",")
     {:username => ENV["MEMCACHIER_USERNAME"],
