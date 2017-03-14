@@ -11,7 +11,7 @@ class UserMailer < ApplicationMailer
   #trying to do thing through the controller instead
   def new_registrations(user)
    @user = user
-    mail(:to => 'jmloftus13@yahoo.com', 
+    mail(:to => @user.email, 
         :subject => "New User created please review and enable.")
   end
 
