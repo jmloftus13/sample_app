@@ -11,6 +11,8 @@
 
     <!--add caching around product section ex6.11-->
     <!--remove later if not needed-->
+<!--entire section of code-->
+<!--
   <% cache @product do %>
       <%= @product.name %>
       </h2>
@@ -27,9 +29,11 @@
           <%= @product.colour %>
       <p>
   <% end -%> <!--end caching-->
-
+<!--
       Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.count_ratings %>"></div>
     </p>  
+
+<!--entire section of code-->
 
 <!--no longer using redis for counter-->
     <h6>          

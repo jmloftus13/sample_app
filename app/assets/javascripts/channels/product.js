@@ -4,7 +4,7 @@
 //executing the line creats the subscription
 //subscribe method in app/channels/product_channel.rb is called.
 //this tells the server that a new subscriber is connected.
-App.product = App.cable.subscriptions.create("ProductChannel", {
+App.product = App.cable.subscriptions.create({channnel: "ProductChannel"}, {
   connected: function() {
     // Called when the subscription is ready for use on the server
   },

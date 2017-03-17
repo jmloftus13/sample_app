@@ -26,7 +26,8 @@ end
       @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], per_page: 3)
       @products = Product.find(params[:id])
       # assuming you load the @product in prepare_product
-      @product.viewed!
+      #commenting out teh below line to see if it fixes Action Cable issue in 6.14
+      #@product.viewed!
     end
 
   end
@@ -44,6 +45,7 @@ end
   # POST /products.json
   def create
     @product = Product.new(product_params)
+    @user = current_user
 
     respond_to do |format|
       if @product.save
