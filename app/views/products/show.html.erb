@@ -12,22 +12,24 @@
     <!--add caching around product section ex6.11-->
     <!--remove later if not needed-->
 
-  <% @product do %> <!--was % cache @product do %-->
-      <%= @product.name %>
-      </h2>
+   <!--was % cache @product do %-->
+      <h3><%= @product.name %></h3>
       <p>
-        <strong>Description:</strong>
+  
+      <strong>Description:</strong>
         <%= @product.description %>
       </p>
+  
       <p>
         <strong>Price:</strong>
         <span class="glyphicons glyphicons-usd"></span><%= @product.price %>
       </p>
+  
       <p>
         <strong>Colour:</strong>
           <%= @product.colour %>
       <p>
-  <% end -%> <!--end caching-->
+  <!--% end -%--> <!--removed caching-->
 
       Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.count_ratings %>"></div>
     </p>  
