@@ -4,18 +4,49 @@
 
 //body styling
 body {
-	background-color: #fffeea;
-	color: maroon;
+	background: url(http://www.commentnation.com/backgrounds/images/forest_green_textured_background_seamless.jpg);	
+	background-size: repeat;
+	color: white;
 	position: relative;
+	margin-top: 1px; 
+}
+
+//Alert Styling
+.notice, .alert {
+  font-family: Reem Kufi, Futura, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  color: red;
+  font-weight: bold;
 }
 
 //text styling
+h1, h2, h3, h4, h5 {
+	font-family: Reem Kufi, Futura, Helvetica, Arial, sans-serif;
+	font-weight: 100em;
+	font-variant: small-caps;
+	color: white;
+}
 h1 {
 	font: bold;
-	color: maroon;
+	color: white;
 }
 h2 {
 	font-style: italic;
+}
+.text{ 
+	font-family: Reem Kufi, Futura, Helvetica, Arial, sans-serif;
+	font-size: 50;
+	font-weight: 100em;
+	font-variant: small-caps;
+	color: white;	
+}
+.text-gray {
+	font-family: Reem Kufi, Futura, Helvetica, Arial, sans-serif;
+	font-weight: 100em;
+	font-variant: small-caps;
+	color: gray;
+	display: inline;
 }
 
 //Navigation styling
@@ -23,15 +54,69 @@ h2 {
 	width: 100%;
 	text-align: center;
 }
+/* Styling for Bootstrap NAVIGATION Section */
+.navbar-custom {
+  	border-color: white;
+	border-radius: 5px;
+	display: inline-block;
+	letter-spacing: 0.05em;
+	top: 0;
+	padding: 10px 5px 10px; 
+	margin: 5px;
+	border: 1px solid white;
+	z-index: 1; 
+}
 .navbar {
-	margin: 0;
+  	margin: 0;
 	padding: 0;
 	border-radius: 15px;
 	box-shadow: 3px 3px;
-	color: black;
-	background-color: beige;
-	width: 98%;
+	color: white;
+	background-color: white;
+	background: url(http://www.commentnation.com/backgrounds/images/forest_green_textured_background_seamless.jpg);
 }
+
+/* This code overrides boostrap's default for navbar */
+/* styling siteName only */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  	color: white;
+}
+/* other nav items */
+.navbar-custom .navbar-nav > li > a {
+  	color: white;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  background-color: #006400;
+}
+/* on the active link */
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #006400;
+}
+.navbar-custom .navbar-text {
+  color: white;
+}
+.navbar-custom .navbar-toggle {
+  border-color: white;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: white;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.body {
+  padding-top: 50px;
+}
+/* end Styling for bootstrap navigation section*/
+
+
 ul {
 	list-style-type: none;
 	text-align: center;
@@ -43,24 +128,34 @@ ul {
 //footer styling
 footer {
 	border-radius: 15px 15px;
-	box-shadow: black 3px 3px;
+	box-shadow: white 3px 3px;
 	width: 98%;
 	padding: 5px;
+	display: inline;
+	margin: 50px 50px; //want to push footer box down a bit - not working
+	font-family: Reem Kufi, Futura, Helvetica, Arial, sans-serif;
+	font-weight: 100em;
+	font-variant: small-caps;
+	text-align: center;
 }
-.product-image, {
-	border: solid black;
-	width: 95%;
-	margin: 10px 10px;
-}
-.product-box {
-	border: solid black;
+.footer-address {
+	color: gray;
+	display: inline;
 }
 hr {
-	border-color: solid gray;
+	border-color: solid white;
 	border-width: 3px;
 	margin-left: 10px;
     margin-right: 10px;
 }
-.FeaturedProduct {
-	margin-top: 100px;
+
+//Contact Form Button
+button {
+	color: black;
+}
+
+/* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    
+    margin: 25px;
 }

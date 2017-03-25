@@ -6,6 +6,8 @@
     <!--Link Bootstrap file -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+    <link href ='https://fonts.googleapis.com/css?family=Reem+Kufi' rel='stylesheet' type='text/css'>
+
     <!--Links to the application.css file -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -20,53 +22,28 @@
   </head>
 
   <body>
-  	<div class="container-fluid">
-	<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
-	  <ul>
-	    <li>Home</li>
-	    <li><%= link_to "About Page", @about %></li>  
-	    <li><%= link_to "Contact Page", @contact %></li>     
-	  </ul>
+ 
+    <div class="container">
+        <%= render 'layouts/nav' %>
 
-    <!--uses Devise's user signed in helper-->
-    <ul class="nav pull-right">
-      <li>
-        <% if user_signed_in? %>
+          <!--Flash messages/ displays a welcome message -->
+          <% if notice %>
+            <p id="notice" class="alert alert-success"><%= notice %></p>
+          <% end %> 
 
-          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+          <% if alert %>
+            <p id="alert" class="alert alert-info"><%= alert %></p>
+          <% end %> 
 
-        <% else %>
-          <%= link_to('Login', new_user_session_path) %>
-        <% end %>
-      </li>
-    </ul>
+        <%= yield %>
 
-
-    <%= form_tag("/products", method: "get") do %>
-    <%= label_tag(:q, "Search here:") %>
-    <%= text_field_tag(:q) %>
-    <%= submit_tag("Search") %>
-<% end %>
-	</nav>
-	</div>
-
-  <!--Flash messages/ displays a welcome message -->
-  <% if notice %>
-    <p id="notice" class="alert alert-success"><%= notice %></p>
-  <% end %> 
-
-  <% if alert %>
-    <p id="alert" class="alert alert-info"><%= alert %></p>
-  <% end %> 
-
-
-	<%= yield %>
+      </div><!-- container -->
 
 
 	
 
 	<footer>
-	  &copy; 2017 Boston Bikes
+	  &copy; 2017 <strong>Boston</strong> Bikes   <div class="footer-address">~ 1600 Huntington Ave Boston, MA ~</div>   Boston <strong>Bikes</strong>
 	</footer> <br>
 
 
