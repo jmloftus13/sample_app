@@ -50,86 +50,16 @@ h2 {
 }
 
 //Navigation styling
-.container-fluid{
+.container-fluid {
 	width: 100%;
 	text-align: center;
-}
-/* Styling for Bootstrap NAVIGATION Section */
-.navbar-custom {
-  	border-color: white;
-	border-radius: 5px;
-	display: inline-block;
-	letter-spacing: 0.05em;
-	top: 0;
-	padding: 10px 5px 10px; 
-	margin: 5px;
-	border: 1px solid white;
-	z-index: 1; 
-}
-.navbar {
-  	margin: 0;
-	padding: 0;
-	border-radius: 15px;
-	box-shadow: 3px 3px;
-	color: white;
-	background-color: white;
-	background: url(http://www.commentnation.com/backgrounds/images/forest_green_textured_background_seamless.jpg);
-}
-
-/* This code overrides boostrap's default for navbar */
-/* styling siteName only */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus {
-  	color: white;
-}
-/* other nav items */
-.navbar-custom .navbar-nav > li > a {
-  	color: white;
-}
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus {
-  background-color: #006400;
-}
-/* on the active link */
-.navbar-custom .navbar-nav > .active > a,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #006400;
-}
-.navbar-custom .navbar-text {
-  color: white;
-}
-.navbar-custom .navbar-toggle {
-  border-color: white;
-}
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-  background-color: white;
-}
-.navbar-custom .navbar-toggle .icon-bar {
-  background-color: white;
-}
-.body {
-  padding-top: 50px;
-}
-/* end Styling for bootstrap navigation section*/
-
-
-ul {
-	list-style-type: none;
-	text-align: center;
-	display: inline-block;
-	position: relative;
-	text-transform: uppercase;
 }
 
 //footer styling
 footer {
 	border-radius: 15px 15px;
 	box-shadow: white 3px 3px;
-	width: 98%;
+	width: 100%;
 	padding: 5px;
 	display: inline;
 	margin: 50px 50px; //want to push footer box down a bit - not working
@@ -138,12 +68,14 @@ footer {
 	font-variant: small-caps;
 	text-align: center;
 }
+
 .footer-address {
 	color: gray;
 	display: inline;
 }
+
 hr {
-	border-color: solid white;
+	border-color: solid black;
 	border-width: 3px;
 	margin-left: 10px;
     margin-right: 10px;

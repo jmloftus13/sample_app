@@ -2,14 +2,20 @@
 
 <h1>Products</h1>
 
-  <!--should this be a class row??? -->
-  <div class = "container">
   	<!--cache key ties this back to app/helper/products_helper.rb-->
   	<!--greatly improved load time-->
   	<% cache(cache_key_for_products) do %>
-    	<%= render @products %>
+  	  <div class = "container-fluid">
+  		<div class="row">
+
+
+	    		<%= render @products %>
+
+
+         </div><!--end row-->  		
+  	  </div> <!--/container-fluid-->
     <% end %>
-  </div>
+
  
      
 <p><p>Click here to add a <strong>

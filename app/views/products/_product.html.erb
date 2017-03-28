@@ -1,15 +1,14 @@
-<!--adding caching block around teh entire partial-->
+<!--adding caching block around the entire partial-->
 <% cache product do %>
-<div class="container-fluid">
-  <div class="row">
 
-      <div class="col-xs-6 col-md-4">
-        <!-- links to show, edit, destry-->
+  <div class="col-xs-12 col-md-6 col-lg-6">
+    <div class="product-box">
+        <!-- links to show, edit, destroy-->
         <a><%= link_to 'Show', product %></a> |
         <a><%= link_to 'Edit', edit_product_path(product) %></a> |
         <a><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></a>
 
-        <div class="product-box">
+
           <div class="product-image">
               <%= image_tag(product.image_url, class: "img-responsive img-zoom", id: "product_image", data_zoom_image: product.image_url) %>
           </div> <!--end product-image-->
@@ -19,9 +18,6 @@
           <p>Colour selection: <%= product.colour %></p>
           <hr>
           <strong>Price $<%= product.price %></strong>
-        </div><!--end product-box-->
-      </div><!-- /col -->
-
-  </div><!--end row-->
-</div><!--end container-fluid-->
+    </div><!--end product-box-->
+  </div><!-- /col -->  
 <% end %> <!--end caching block-->

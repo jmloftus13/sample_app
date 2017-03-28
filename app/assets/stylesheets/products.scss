@@ -10,7 +10,7 @@
   margin-top: 100px;
 }
 //styling around the product box
-.col-xs-12, .col-md-6 {
+.col-xs-12, .col-md-6 col-xs-12, .col-lg-6 {
 	border-radius: 15px 15px;
 	box-shadow: 3px white;
 }
@@ -31,4 +31,9 @@
 .product-box {
   border: solid white;
   border-radius: 15px 15px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 90%;
+  margin: 0 auto;
 }
