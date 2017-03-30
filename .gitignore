@@ -22,3 +22,10 @@
 
 # Ignore UnnecessaryFile file.
 /Desktop/sample_app/UnnecessaryFile
+
+/.DS_Store
+/vendor/cache/*
+/vendor/bundle/*
+/public/assets/*
+/log/*
+dump.rdb
