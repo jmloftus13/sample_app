@@ -21,7 +21,7 @@
       </p>
   
       <p>
-        <strong>Price:</strong>
+        <strong>Price: $ </strong>
         <span class="glyphicons glyphicons-usd"></span><%= @product.price %>
       </p>
   
@@ -31,7 +31,7 @@
       <p>
   <!--% end -%--> <!--removed caching-->
 
-      Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.count_ratings %>"></div>
+      Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div>
     </p>  
 
 <!--entire section of code-->

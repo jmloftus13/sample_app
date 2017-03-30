@@ -5,20 +5,33 @@
 
 .product-reviews h4 {
   text-align: left;
+  color: black;
 }
 .comment-labels {
-  color: white;
+  color: black;
 }
-.comment-submit-button {
-  border-color: silver;
-  background-color: white;
-  color: white;
-  margin-top: 3%;
-} 
-.comment-box {
-  border: 1px solid silver;
+.comment-box { //out for now
+  border: 1px solid black;
   border-radius: 15px;
   padding: 1% 2%;
   margin: 1%;
-  width: 50%;
+}
+.submit-comment-button {
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+textarea {
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+//Horizontal line
+hr {
+  border-color: solid black;
+  border-width: 3px;
+  margin-left: 10px;
+    margin-right: 10px;
 }
