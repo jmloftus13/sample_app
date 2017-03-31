@@ -1,0 +1,289 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"strong\tTag"
+			],
+			[
+				"user",
+				"user2"
+			],
+			[
+				"p",
+				"product-box"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jml/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/jml/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jml/Desktop/sample_app/spec/controllers/products_controller_spec.rb",
+		"/Users/jml/Desktop/sample_app/spec/factories/product_factory.rb",
+		"/Users/jml/Desktop/sample_app/app/views/comments/create.js.erb",
+		"/Users/jml/Desktop/sample_app/app/views/comments/_comment.html.erb",
+		"/Users/jml/Desktop/sample_app/.gitignore",
+		"/Users/jml/Desktop/sample_app/app/assets/stylesheets/static_pages.scss",
+		"/Users/jml/Desktop/sample_app/app/assets/stylesheets/comments.scss",
+		"/Users/jml/Desktop/sample_app/app/views/products/_new_comment.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/products/show.html.erb",
+		"/Users/jml/Desktop/sample_app/app/models/product.rb",
+		"/Users/jml/Desktop/sample_app/app/views/products/_product.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/layouts/_nav.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/products/index.html.erb",
+		"/Users/jml/Desktop/sample_app/app/assets/stylesheets/products.scss",
+		"/Users/jml/Desktop/sample_app/app/assets/stylesheets/navigation.scss",
+		"/Users/jml/Desktop/sample_app/app/views/layouts/application.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/static_pages/index.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/static_pages/contact.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/static_pages/landing_page.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/static_pages/about.html.erb",
+		"/Users/jml/Dropbox/2-CF/Template/Backup of ex 2.10-11 (google map api)/css/styles.css",
+		"/Users/jml/Desktop/sample_app/app/assets/stylesheets/application.css",
+		"/Users/jml/Desktop/sample_app/app/views/static_pages/thank_you.html.erb",
+		"/Users/jml/Desktop/sample_app/config/initializers/redis.rb",
+		"/Users/jml/Desktop/sample_app/app/views/products/_comments.html.erb",
+		"/Users/jml/Desktop/sample_app/app/assets/javascripts/channels/product.js",
+		"/Users/jml/Desktop/sample_app/app/controllers/products_controller.rb",
+		"/Users/jml/Desktop/sample_app/app/mailers/user_mailer.rb",
+		"/Users/jml/Desktop/sample_app/app/controllers/comments_controller.rb",
+		"/Users/jml/Desktop/sample_app/config/environments/production.rb",
+		"/Users/jml/Desktop/sample_app/Gemfile",
+		"/Users/jml/Desktop/sample_app/config/application.rb",
+		"/Users/jml/Desktop/sample_app/app/models/comment.rb",
+		"/Users/jml/Desktop/sample_app/app/jobs/comment_update_job.rb",
+		"/Users/jml/Desktop/sample_app/app/channels/application_cable/connection.rb",
+		"/Users/jml/Desktop/sample_app/app/channels/product_channel.rb",
+		"/Users/jml/Desktop/sample_app/app/assets/javascripts/cable.js",
+		"/Users/jml/Desktop/sample_app/app/channels/application_cable/channel.rb",
+		"/Users/jml/Desktop/sample_app/config/routes.rb",
+		"/Users/jml/Desktop/sample_app/config/cable.yml",
+		"/Users/jml/Desktop/sample_app/config/environments/development.rb",
+		"/Users/jml/Desktop/sample_app/app/controllers/new_registrations_controller.rb",
+		"/Users/jml/Desktop/sample_app/app/models/user.rb",
+		"/Users/jml/Desktop/sample_app/app/mailers/application_mailer.rb",
+		"/Users/jml/Desktop/sample_app/app/views/user_mailer/send_new_user_messsage.html.erb",
+		"/Users/jml/Desktop/sample_app/app/controllers/registrations_controller.rb",
+		"/Users/jml/Desktop/sample_app/app/helpers/comments_helper.rb",
+		"/Users/jml/Desktop/sample_app/app/controllers/users_controller.rb",
+		"/Users/jml/Desktop/sample_app/app/assets/javascripts/site.js",
+		"/Users/jml/Desktop/sample_app/app/views/user_mailer/contact_form.html.erb",
+		"/Users/jml/Desktop/sample_app/app/helpers/products_helper.rb",
+		"/Users/jml/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss",
+		"/Users/jml/Desktop/sample_app/app/controllers/payments_controller.rb",
+		"/Users/jml/Desktop/sample_app/app/views/shared/_stripe_checkout_button.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/payments/create.html.erb",
+		"/Users/jml/Desktop/sample_app/app/assets/stylesheets/payments.scss",
+		"/Users/jml/Desktop/sample_app/config/initializers/stripe.rb",
+		"/Users/jml/Desktop/sample_app/spec/models/product_spec.rb",
+		"/Users/jml/Desktop/sample_app/spec/controllers/users_controller_spec.rb",
+		"/Users/jml/Desktop/sample_app/spec/factories/user_factory.rb",
+		"/Users/jml/Desktop/sample_app/spec/support/factory_girl.rb",
+		"/Users/jml/Desktop/sample_app/spec/controllers/static_pages_controller_spec.rb",
+		"/Users/jml/Desktop/sample_app/spec/rails_helper.rb",
+		"/Users/jml/Desktop/sample_app/spec/models/user_spec.rb",
+		"/Users/jml/Desktop/sample_app/spec/models/order_spec.rb",
+		"/Users/jml/Desktop/sample_app/spec/models/comment_spec.rb",
+		"/Users/jml/Desktop/sample_app/db/migrate/20170225195225_add_admin_flag_to_users.rb",
+		"/Users/jml/Desktop/sample_app/app/views/products/_form.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/users/index.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/users/show.html.erb",
+		"/Users/jml/Desktop/sample_app/app/controllers/application_controller.rb",
+		"/Users/jml/Desktop/sample_app/app/models/ability.rb",
+		"/Users/jml/Desktop/sample_app/app/views/layouts/backup 2-11 application.html.erb",
+		"/Users/jml/Desktop/sample_app/app/assets/stylesheets/users.scss",
+		"/Users/jml/Desktop/sample_app/app/views/devise/registrations/edit.html.erb",
+		"/Users/jml/Desktop/sample_app/app/controllers/orders_controller.rb",
+		"/Users/jml/Desktop/sample_app/app/models/order.rb",
+		"/Users/jml/Desktop/sample_app/app/views/products/edit.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/products/backup-edit.html.erb",
+		"/Users/jml/Desktop/sample_app/app/controllers/static_pages_controller.rb",
+		"/Users/jml/Desktop/sample_app/test/mailers/previews/user_mailer_preview.rb",
+		"/Users/jml/Desktop/sample_app/config/environment.rb",
+		"/Users/jml/Desktop/sample_app/config/backup of routes.rb",
+		"/Users/jml/Desktop/sample_app/app/controllers/backup of products_controller.rb",
+		"/Users/jml/Desktop/sample_app/app/views/products/backup_index.html.erb",
+		"/Users/jml/Desktop/sample_app/db/seeds.rb",
+		"/Users/jml/Desktop/sample_app/app/views/products/new.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/orders/show.html.erb",
+		"/Users/jml/Desktop/sample_app/app/views/products/backup-index.html.erb",
+		"/Users/jml/Desktop/sample_app/db/migrate/20170106230912_rename_color_to_colour_in_products.rb",
+		"/Users/jml/Desktop/sample_app/db/migrate/20170104005100_add_color_to_products.rb",
+		"/Users/jml/Desktop/sample_app/app/assets/javascripts/static_pages.coffee",
+		"/Users/jml/Desktop/sample_app/app/assets/javascripts/application.js",
+		"/Users/jml/Desktop/sample_app/UnnecessaryFile",
+		"/Users/jml/Desktop/sample_app/README.md"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"li",
+			"send",
+			" red",
+			"red",
+			"gray",
+			"views",
+			"memcachier",
+			"create",
+			"brakeman",
+			"backup",
+			"nav-collapse",
+			"favicon.ico",
+			"TheUpscaleYardsale",
+			"each",
+			"color"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "manifest.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,22 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
-
-  	<!--cache key ties this back to app/helper/products_helper.rb-->
-  	<!--greatly improved load time-->
-  	<% cache(cache_key_for_products) do %>
-  	  <div class = "container-fluid">
-  		<div class="row">
-
-
+  <!--cache key ties this back to app/helper/products_helper.rb-->
+  <!--greatly improved load time-->
+  <% cache(cache_key_for_products) do %>
+    <div class = "container-fluid">
+  	  <div class="row">
 	    		<%= render @products %>
-
-
-         </div><!--end row-->  		
-  	  </div> <!--/container-fluid-->
-    <% end %>
-
- 
+      </div><!--end row-->  		
+    </div> <!--/container-fluid-->
+  <% end %>
      
 <p><p>Click here to add a <strong>
-<%= link_to 'New Product', new_product_path %></strong></p>
+  <%= link_to 'New Product', new_product_path %></strong></p>

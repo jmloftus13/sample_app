@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
 
-	def create
+  def create
     @product = Product.find(params[:product_id])
     @comment = @product.comments.new(comment_params)
     @comment.user = current_user
@@ -23,18 +23,18 @@ class CommentsController < ApplicationController
     end #end do
   end #end create method
 
-	def destroy
+  def destroy
     @comment = Comment.find(params[:id])
     product = @comment.product
     @comment.destroy
     redirect_to product
-	end #end destroy
+  end #end destroy
 
 
-	private
+  private
 
-    def comment_params
-      params.require(:comment).permit(:user_id, :body, :rating)
-    end
+  def comment_params
+    params.require(:comment).permit(:user_id, :body, :rating)
+  end
 
 end #CommentsController

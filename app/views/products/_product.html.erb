@@ -3,21 +3,21 @@
 
   <div class="col-xs-12 col-md-6 col-lg-6">
     <div class="product-box">
-        <!-- links to show, edit, destroy-->
-        <a><%= link_to 'Show', product %></a> |
-        <a><%= link_to 'Edit', edit_product_path(product) %></a> |
-        <a><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+      <!-- links to show, edit, destroy-->
+      <a><%= link_to 'Show', product %></a> |
+      <a><%= link_to 'Edit', edit_product_path(product) %></a> |
+      <a><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></a>
 
 
-          <div class="product-image">
-              <%= image_tag(product.image_url, class: "img-responsive img-zoom", id: "product_image", data_zoom_image: product.image_url) %>
-          </div> <!--end product-image-->
+      <div class="product-image">
+        <%= image_tag(product.image_url, class: "img-responsive img-zoom", id: "product_image", data_zoom_image: product.image_url) %>
+      </div> <!--end product-image-->
 
-          <h1><%= product.name %></h1>
-          <p><%= product.description %></p>
-          <p>Colour selection: <%= product.colour %></p>
-          <hr>
-          <strong>Price $<%= product.price %></strong>
+      <h1><%= product.name %></h1>
+      <p><%= product.description %></p>
+      <p>Colour selection: <%= product.colour %></p>
+      <hr>
+        <strong>Price $<%= product.price %></strong>
     </div><!--end product-box-->
   </div><!-- /col -->  
 <% end %> <!--end caching block-->
